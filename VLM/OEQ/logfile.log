@@ -1,0 +1,27 @@
+2024-12-07 20:29:36,574 - INFO - Starting dataset processing
+2024-12-07 20:29:52,223 - INFO - Using text model: llama3.2
+2024-12-07 20:29:52,224 - INFO - Using vision model: llama3.2-vision
+2024-12-07 20:29:52,230 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 20:29:52,231 - INFO - Processing Image OEQ
+2024-12-07 20:30:07,262 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:30:07,264 - INFO - Processing Image OEQ
+2024-12-07 20:30:17,688 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:30:17,704 - INFO - Processing Image OEQ
+2024-12-07 20:30:26,558 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:30:26,575 - INFO - Processing Image OEQ
+2024-12-07 20:30:32,848 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:30:32,850 - INFO - Processing Image OEQ
+2024-12-07 20:30:37,059 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:30:37,060 - INFO - Processing Image OEQ
+2024-12-07 20:30:48,053 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:30:48,071 - INFO - Processing Image OEQ
+2024-12-07 20:30:59,055 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:30:59,056 - INFO - Processing Image OEQ
+2024-12-07 20:31:24,292 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:31:24,309 - INFO - Processing Image OEQ
+2024-12-07 20:31:31,507 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:31:31,509 - INFO - Processing Image OEQ
+2024-12-07 20:31:40,095 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 20:31:40,096 - INFO - Finished processing subset default:train
+2024-12-07 20:31:40,175 - INFO - Results successfully saved to results/hammer888_captcha-data_result_llama3.2-vision.json
+2024-12-07 20:31:40,176 - INFO - Total dataset processing time: 123.60 seconds

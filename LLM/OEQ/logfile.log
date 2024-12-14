@@ -1,0 +1,136 @@
+2024-12-07 22:08:20,018 - INFO - GSM8K: Initialized with output suffix: llama3.2
+2024-12-07 22:08:20,019 - INFO - Starting dataset processing
+2024-12-07 22:08:30,505 - INFO - Using text model: llama3.2
+2024-12-07 22:08:30,505 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:08:30,506 - INFO - Using text model: llama3.2
+2024-12-07 22:08:30,507 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:08:30,509 - INFO - Using text model: llama3.2
+2024-12-07 22:08:30,509 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:08:30,510 - INFO - Using text model: llama3.2
+2024-12-07 22:08:30,511 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:08:30,512 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:08:30,514 - INFO - Processing Text OEQ
+2024-12-07 22:08:30,515 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:08:30,515 - INFO - Processing Text OEQ
+2024-12-07 22:08:30,519 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:08:30,521 - INFO - Processing Text OEQ
+2024-12-07 22:08:30,523 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:08:30,524 - INFO - Processing Text OEQ
+2024-12-07 22:08:33,424 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:33,426 - INFO - Processing Text OEQ
+2024-12-07 22:08:33,561 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:33,578 - INFO - Processing Text OEQ
+2024-12-07 22:08:34,415 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:34,416 - INFO - Processing Text OEQ
+2024-12-07 22:08:34,665 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:34,666 - INFO - Processing Text OEQ
+2024-12-07 22:08:37,187 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:37,189 - INFO - Processing Text OEQ
+2024-12-07 22:08:38,778 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:38,780 - INFO - Processing Text OEQ
+2024-12-07 22:08:38,828 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:40,189 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:41,137 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:41,948 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:41,950 - INFO - Finished processing subset main:train
+2024-12-07 22:08:45,439 - INFO - Using text model: llama3.2
+2024-12-07 22:08:45,439 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:08:45,439 - INFO - Using text model: llama3.2
+2024-12-07 22:08:45,440 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:08:45,441 - INFO - Using text model: llama3.2
+2024-12-07 22:08:45,442 - INFO - Using text model: llama3.2
+2024-12-07 22:08:45,443 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:08:45,443 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:08:45,445 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:08:45,448 - INFO - Processing Text OEQ
+2024-12-07 22:08:45,451 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:08:45,451 - INFO - Processing Text OEQ
+2024-12-07 22:08:45,454 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:08:45,455 - INFO - Processing Text OEQ
+2024-12-07 22:08:45,459 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:08:45,459 - INFO - Processing Text OEQ
+2024-12-07 22:08:48,421 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:48,423 - INFO - Processing Text OEQ
+2024-12-07 22:08:48,638 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:48,640 - INFO - Processing Text OEQ
+2024-12-07 22:08:51,831 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:51,833 - INFO - Processing Text OEQ
+2024-12-07 22:08:52,838 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:52,840 - INFO - Processing Text OEQ
+2024-12-07 22:08:52,989 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:52,991 - INFO - Processing Text OEQ
+2024-12-07 22:08:53,466 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:53,468 - INFO - Processing Text OEQ
+2024-12-07 22:08:56,283 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:56,306 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:56,421 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:58,658 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:08:58,660 - INFO - Finished processing subset main:test
+2024-12-07 22:09:04,940 - INFO - Using text model: llama3.2
+2024-12-07 22:09:04,940 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:09:04,941 - INFO - Using text model: llama3.2
+2024-12-07 22:09:04,941 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:09:04,942 - INFO - Using text model: llama3.2
+2024-12-07 22:09:04,944 - INFO - Using text model: llama3.2
+2024-12-07 22:09:04,945 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:09:04,946 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:09:04,948 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:09:04,949 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:09:04,950 - INFO - Processing Text OEQ
+2024-12-07 22:09:04,951 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:09:04,951 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:09:04,952 - INFO - Processing Text OEQ
+2024-12-07 22:09:04,954 - INFO - Processing Text OEQ
+2024-12-07 22:09:04,955 - INFO - Processing Text OEQ
+2024-12-07 22:09:10,019 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:10,035 - INFO - Processing Text OEQ
+2024-12-07 22:09:11,506 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:11,508 - INFO - Processing Text OEQ
+2024-12-07 22:09:11,927 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:11,943 - INFO - Processing Text OEQ
+2024-12-07 22:09:13,433 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:13,450 - INFO - Processing Text OEQ
+2024-12-07 22:09:13,511 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:13,513 - INFO - Processing Text OEQ
+2024-12-07 22:09:15,235 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:15,251 - INFO - Processing Text OEQ
+2024-12-07 22:09:16,910 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:17,534 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:19,159 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:21,532 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:21,534 - INFO - Finished processing subset socratic:train
+2024-12-07 22:09:24,692 - INFO - Using text model: llama3.2
+2024-12-07 22:09:24,692 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:09:24,693 - INFO - Using text model: llama3.2
+2024-12-07 22:09:24,693 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:09:24,694 - INFO - Using text model: llama3.2
+2024-12-07 22:09:24,696 - INFO - Using text model: llama3.2
+2024-12-07 22:09:24,697 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:09:24,697 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:09:24,698 - INFO - Using vision model: llama3.2-vision
+2024-12-07 22:09:24,699 - INFO - Processing Text OEQ
+2024-12-07 22:09:24,701 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:09:24,703 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:09:24,704 - INFO - Processing Text OEQ
+2024-12-07 22:09:24,705 - INFO - Processing Text OEQ
+2024-12-07 22:09:24,708 - INFO - HTTP Request: GET http://127.0.0.1:11434/api/tags "HTTP/1.1 200 OK"
+2024-12-07 22:09:24,708 - INFO - Processing Text OEQ
+2024-12-07 22:09:28,362 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:28,364 - INFO - Processing Text OEQ
+2024-12-07 22:09:28,567 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:28,569 - INFO - Processing Text OEQ
+2024-12-07 22:09:28,639 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:28,640 - INFO - Processing Text OEQ
+2024-12-07 22:09:31,598 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:31,600 - INFO - Processing Text OEQ
+2024-12-07 22:09:34,078 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:34,079 - INFO - Processing Text OEQ
+2024-12-07 22:09:35,358 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:35,360 - INFO - Processing Text OEQ
+2024-12-07 22:09:36,426 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:38,012 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:09:38,701 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:10:17,787 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2024-12-07 22:10:17,790 - INFO - Finished processing subset socratic:test
+2024-12-07 22:10:17,791 - INFO - Results successfully saved to results/openai_gsm8k_result_llama3.2.json
+2024-12-07 22:10:17,791 - INFO - Total dataset processing time: 117.77 seconds
