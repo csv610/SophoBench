@@ -1,2 +1,3 @@
-# SophoBench
-Integrated LLM and VLM Benchmarks
+# SophoBencho
+![Alt text](images/sopho.png)
+LLM Benchmarks
