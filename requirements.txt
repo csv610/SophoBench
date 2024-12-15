@@ -1,0 +1,10 @@
+datasets
+tqdm
+tabulate
+huggingface-hub
+typing-extensions
+argparse
+ollama
+torch
+pillow
+streamlit
