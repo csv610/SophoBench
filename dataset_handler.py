@@ -121,6 +121,7 @@ class DatasetHandler(ABC):
         return count
 
     def get_dataset(self, subject, split):
+        logger.info(f"Loading dataset for {subject} - {split}")
         try:
             if self.data_source == 'csv':
                 return self._load_from_csv()

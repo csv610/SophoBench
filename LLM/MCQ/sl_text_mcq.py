@@ -2,7 +2,7 @@ import streamlit as st
 from ai2arc import Ai2ArcDataset
 from mmlu import MMLUDataset
 from mmlu_pro import MMLUProDataset
-from medmcqa import MedMCQADataset
+from medmcqa import MedMcqaDataset
 from medqa import MedQADataset
 from medqa_usmle_4_options import MedQAUSMLE4OptionsDataset
 from sciq import SciQDataset
@@ -17,7 +17,7 @@ DATASET_HANDLERS = {
     "AI2 ARC": Ai2ArcDataset,
     "MMLU": MMLUDataset,
     "MMLU Pro": MMLUProDataset,
-    "MedMCQA": MedMCQADataset,
+    "MedMCQA": MedMcqaDataset,
     "MedQA": MedQADataset,
     "MedQA USMLE 4 Options": MedQAUSMLE4OptionsDataset,
     "SciQ": SciQDataset,

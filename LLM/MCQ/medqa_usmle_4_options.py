@@ -14,8 +14,6 @@ from model_query import ModelQuery
 from dataset_run_util import run_dataset
 from task_list import Tasks
 
-#URL: https://huggingface.co/datasets/GBaker/MedQA-USMLE-4-options
-
 class MedQAUSMLE4OptDataset(DatasetHandler):
     DATASET_NAME = "GBaker/MedQA-USMLE-4-options"
     REQUIRED_DATA_KEYS = frozenset({"question", "options", "answer_idx"})

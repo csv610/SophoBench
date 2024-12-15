@@ -1,10 +1,12 @@
 import argparse
 from typing import NamedTuple, Type
+from tasks import Tasks
 
 class ExecutionArgs(NamedTuple):
     nsamples: int | None
     models: dict
     sys_config: dict
+    task: str
 
 def get_execution_args(description: str = "Process dataset") -> ExecutionArgs:
     """
@@ -49,6 +51,13 @@ def get_execution_args(description: str = "Process dataset") -> ExecutionArgs:
         default=100,
         help="Timeout in seconds for model response. Default is 100 seconds."
     )
+    parser.add_argument(
+        '-task', 
+        type=str, 
+        default=Tasks.TASK_GENERATE_ANSWER, 
+        choices=list(Tasks.VALID_TASKS), 
+        help='Specify the task to run (default: generate_answer).'
+    )
     args = parser.parse_args()
 
     models = {
@@ -64,7 +73,8 @@ def get_execution_args(description: str = "Process dataset") -> ExecutionArgs:
     return ExecutionArgs(
         nsamples=args.nsamples,
         models=models,
-        sys_config=sys_config
+        sys_config=sys_config,
+        task=args.task
     )
 
 def run_dataset(execute_class: Type) -> None:
@@ -77,6 +87,6 @@ def run_dataset(execute_class: Type) -> None:
     description = f"Executing {execute_class.__name__} dataset"
     args = get_execution_args(description=description)
 
-    bench = execute_class( models=args.models, sys_config=args.sys_config)
-    
+    bench = execute_class( bench = execute_class(task=args.task, models=args.models, sys_config=args.sys_config)
+   
     bench.run(nsamples=args.nsamples)
