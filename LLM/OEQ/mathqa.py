@@ -10,7 +10,7 @@ initialize_logging(log_file="mathqa_status.log")
 from dataset_handler import DatasetHandler
 from model_query import ModelQuery
 from dataset_run_util import run_dataset
-from task_list import Tasks
+from task_list import execute_task
 
 class MathDataset(DatasetHandler):
     """MATH Dataset handler.
@@ -21,8 +21,13 @@ class MathDataset(DatasetHandler):
     
     Dataset: https://huggingface.co/datasets/lighteval/MATH
     """
-    DATASET_NAME = "lighteval/MATH"
+    HF_DATASET_NAME = "lighteval/MATH"
+    SF_DATASET_NAME = "MATH"
     REQUIRED_DATA_KEYS = frozenset({"problem", "solution"})
+
+    @classmethod
+    def is_multimodal(cls):
+        return False
 
     def __init__(self, task, models, sys_config=None):
         logging.info("MATH dataset initializing")
@@ -30,41 +35,11 @@ class MathDataset(DatasetHandler):
         self.models = models
         self.local_thread = threading.local()
         output_suffix = models.get('text', '')
-        super().__init__(self.DATASET_NAME, output_suffix, sys_config)
+        super().__init__(self.HF_DATASET_NAMEDATASET_NAME, output_suffix, sys_config)
 
-    @classmethod
-    def is_multimodal(cls):
-        return False
-
-    def apply_op(self, row):
-        model_input = self.extract_data(row)
-        if model_input is None:
-           error_msg = f"MATH: Failed to extract data from row: {row.get('problem', '[No problem found]')[:100]}..."
-           logging.error(error_msg)
-           return error_msg
-
-        if self.task == Tasks.TASK_GENERATE_ANSWER:
-            return self.generate_answer(model_input)
+    def process_dataset_row(self, row):
+        return execute_task(self, row)
         
-        if self.task == Tasks.TASK_SAVE_QUESTION:
-            return model_input
-
-        return "Invalid task"
-        
-    def generate_answer(self, model_input):
-        model = self.get_model()
-        if model is None:
-            error_msg = "MATH: Model initialization failed - invalid model selection or configuration"
-            logging.error(error_msg)
-            return error_msg
-        try:
-            response = model.get_response(model_input)
-            return response
-        except Exception as e:
-            error_msg = f"MATH: Error getting model response: {str(e)}"
-            logging.error(error_msg)
-            return error_msg
-
     def extract_data(self, row):
         question = row.get('problem', '')
         if not question:
@@ -83,5 +58,11 @@ class MathDataset(DatasetHandler):
     def get_model(self):
         return ModelQuery.get_thread_model(self.local_thread, self.models)
 
+    def get_dataset_name(self):
+        return self.SF_DATASET_NAME
+
+    def get_assigned_task(self):
+        return self.task
+  
 if __name__ == "__main__":
     run_dataset(MathDataset)

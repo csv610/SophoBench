@@ -54,7 +54,7 @@ def create_dynamic_hierarchical_graph(mcq_llm_items, oeq_llm_items, mcq_vlm_item
 
 # Example usage
 mcq_llm_items = ["Ai2Arc", "BigBenchHard(BBH)", "Medical Meadow MedQA", "MedMCQA", "MedQA", "MedQA USMLE 4Options", "MMLU", "MMLU Pro", "SciQ", "WinoGrande"]
-oeq_llm_items = ["GPQA", "GSM8K", "GSMPlus", "IMO Geometry", "MathQA", "Medical Meadow FlashCards", "Medical Meadow Wikidoc Patient", "Medical Questions", "MedQna Version3", "MedQuAd", "MetsMathQA", "MetaMathQA40K", "SciBench", "SimpleQA", "TrugthfuklQA"]
+oeq_llm_items = ["GPQA", "GSM8K", "GSMPlus", "IMO Geometry", "MathQA", "Medical Meadow FlashCards", "Medical Meadow Wikidoc Patient", "Medical Questions", "MedQna Version3", "MedQuAd", "MetaMathQA", "MetaMathQA40K", "SciBench", "SimpleQA", "TrugthfuklQA"]
 mcq_vlm_items = ["Ai2D", "BLINK", "Cauldron", "MathV360K", "MMMU", "NEJM", "ScienceQA", "WorldMedQA"]
 oeq_vlm_items = ["Animals", "Camou", "Captcha", "KvasirQA", "MathVision", "MathVista", "MedTrinity25M", "OlympiadBench","OlympicAreana", "PD12M", "RealWorldQA", "RocoRadiology", "SLAKE", "TheoremQA", "VisitBench", "VlmsareBlind", "VQRad" ]
 

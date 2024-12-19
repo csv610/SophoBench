@@ -1,6 +1,6 @@
 import argparse
 from typing import NamedTuple, Type
-from tasks import Tasks
+from task_list import Tasks
 
 class ExecutionArgs(NamedTuple):
     nsamples: int | None
@@ -54,7 +54,7 @@ def get_execution_args(description: str = "Process dataset") -> ExecutionArgs:
     parser.add_argument(
         '-task', 
         type=str, 
-        default=Tasks.TASK_GENERATE_ANSWER, 
+        default=Tasks.GENERATE_ANSWERS, 
         choices=list(Tasks.VALID_TASKS), 
         help='Specify the task to run (default: generate_answer).'
     )
@@ -87,6 +87,6 @@ def run_dataset(execute_class: Type) -> None:
     description = f"Executing {execute_class.__name__} dataset"
     args = get_execution_args(description=description)
 
-    bench = execute_class( bench = execute_class(task=args.task, models=args.models, sys_config=args.sys_config)
+    bench = execute_class(task=args.task, models=args.models, sys_config=args.sys_config)
    
     bench.run(nsamples=args.nsamples)

@@ -1,0 +1,6 @@
+    def get_dataset_name():
+        return SF_DATASET_NAME
+
+    def get_assigned_task():
+        return self.task
+  

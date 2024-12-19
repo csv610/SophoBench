@@ -10,7 +10,7 @@ initialize_logging(log_file="simpleqa_status.log")
 from dataset_handler import DatasetHandler
 from model_query import ModelQuery
 from dataset_run_util import run_dataset
-from task_list import Tasks
+from task_list import execute_task
 
 class SimpleQADataset(DatasetHandler):
     """SimpleQA Dataset handler.
@@ -19,6 +19,7 @@ class SimpleQADataset(DatasetHandler):
     language model capabilities on straightforward question answering tasks.
     """
     DATASET_NAME = "./datasimple_qa.json"  # Local dataset
+    SF_DATATSET_NAME = "SimpleQA"
     REQUIRED_DATA_KEYS = frozenset({'problem'})
     
     def __init__(self, task, models, sys_config=None):
@@ -33,35 +34,8 @@ class SimpleQADataset(DatasetHandler):
     def is_multimodal(cls):
         return False
 
-    def apply_op(self, row):
-        model_input = self.extract_data(row)
-        if model_input is None:
-            error_msg = f"SimpleQA: Failed to extract data from row: {row.get('problem', '[No question found]')[:100]}..."
-            logging.error(error_msg)
-            return error_msg
-
-        if self.task == Tasks.TASK_GENERATE_ANSWER:
-            return self.generate_answer(model_input)
-        
-        if self.task == Tasks.TASK_SAVE_QUESTION:
-            return model_input
-
-        return "Invalid task"
-
-    def generate_answer(self, model_input):
-        model = self.get_model()
-        if model is None:
-            error_msg = "SimpleQA: Model initialization failed - invalid model selection or configuration"
-            logging.error(error_msg)
-            return error_msg
-            
-        try:
-            response = model.get_response(model_input)
-            return response
-        except Exception as e:
-            error_msg = f"SimpleQA: Error getting model response: {str(e)}"
-            logging.error(error_msg)
-            return error_msg
+    def process_dataset_row(self, row):
+        return execute_task(self, row)
 
     def extract_data(self, row):
         question = row.get('problem', '')
@@ -82,6 +56,12 @@ class SimpleQADataset(DatasetHandler):
 
     def get_model(self):
         return ModelQuery.get_thread_model(self.local_thread, self.models)
+
+    def get_dataset_name(self):
+        return self.SF_DATASET_NAME
+
+    def get_assigned_task(self):
+        return self.task
 
 if __name__ == "__main__":
     run_dataset(SimpleQADataset)

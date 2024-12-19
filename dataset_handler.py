@@ -84,7 +84,7 @@ class DatasetHandler(ABC):
 
     def process_single_question(self, dataset, id):
         try:
-            answer = self.apply_op(dataset[id])
+            answer = self.process_dataset_row(dataset[id])
             return id, answer
         except Exception as e:
             logger.error(f"Error processing row {id}: {e}")
@@ -218,8 +218,10 @@ class DatasetHandler(ABC):
         total_time = time.time() - start_time
         logger.info(f"Total dataset processing time: {total_time:.2f} seconds")
 
+    
+
     @abstractmethod
-    def apply_op(self, row):
+    def process_dataset_row(self, row):
         pass
 
     def run(self, nsamples=None):

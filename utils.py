@@ -66,8 +66,8 @@ def save_results(data: dict, bench_name: str, model_name: str):
         # Ensure the results directory exists
         os.makedirs('results', exist_ok=True)
 
-        # Replace '/' with '_' in the benchmark name to avoid path issues
-        bench_name = bench_name.replace('/', '_')
+        # Extract text after the last '/' and convert to lowercase
+        bench_name = bench_name.split('/')[-1].lower()
 
         # Construct the filename
         filename = os.path.join('results', f'{bench_name}_result_{model_name}.json')

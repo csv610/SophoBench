@@ -6,7 +6,7 @@ from medmcqa import MedMcqaDataset
 from medqa import MedQADataset
 from medqa_usmle_4_options import MedQAUSMLE4OptionsDataset
 from sciq import SciQDataset
-from winogrande import WinograndeDataset
+from winogrande import WinoGrandeDataset
 from bigbenchhard import BigBenchHardDataset
 from medical_meadow_medqa import MedicalMeadowMedQADataset
 
@@ -21,7 +21,7 @@ DATASET_HANDLERS = {
     "MedQA": MedQADataset,
     "MedQA USMLE 4 Options": MedQAUSMLE4OptionsDataset,
     "SciQ": SciQDataset,
-    "Winogrande": WinograndeDataset,
+    "Winogrande": WinoGrandeDataset,
     "BigBench Hard": BigBenchHardDataset,
     "Medical Meadow MedQA": MedicalMeadowMedQADataset
 }
